@@ -1,0 +1,48 @@
+# InputRC
+# Re-read this file with ^X ^R
+
+# single tab to start completion help
+#set show-all-if-ambiguous on
+
+set colored-stats on
+set blink-matching-paren on
+set colored-completion-prefix on
+set visible-stats on
+
+set mark-directories On
+
+# completion is case-insensitive
+set completion-ignore-case on
+
+".,E": "$U_Email\e\C-e"
+".,e": "$U_email\e\C-e"
+".,u": "$U_login\e\C-e"
+"øu": "$U_Login\e\C-e"
+".,A": "$U_Login\e\C-e"
+".,d": "RASAD"
+".,H": "-h !!\n"
+#".,h": "!!\C-p\C-aa\C-h-h \C-e"
+".,h": "-h !!\e\C-e"
+".,o": "!!\e\C-e 2>&1 | less -RS"
+".,c": "!!\e\C-e | xsel -ib"
+".,m": "man !!\e\C-e"
+".,S": "sudo !!\e\C-e"
+".,g": " | grep"
+".,l": " 2>&1 | less -RS"
+".,s": "systemctl --user"
+"^^": "--help | grep "
+".,F": "~/scp/host/Data/"
+"øS": "~/scp/host/ScanIn/"
+
+#set bell-style none
+#set editing-mode emacs
+#set completion-query-items 300
+
+# perform alias expansion
+#"\C-xa": alias-expand-line
+# Quote the current or previous word
+#"\C-xq": "\eb\"\ef\""
+# edit the path
+#"\C-xp": "PATH=${PATH}\e\C-e\C-a\ef\C-f"
+#" ": "\e\C-e "
+
