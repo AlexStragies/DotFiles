@@ -32,6 +32,8 @@ set completion-ignore-case on
 "^^": "--help | grep "
 ".,F": "~/scp/host/Data/"
 "øS": "~/scp/host/ScanIn/"
+".,1": "192.168."
+".,3": "192.168.13."
 
 #set bell-style none
 #set editing-mode emacs
